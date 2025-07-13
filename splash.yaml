@@ -1,11 +1,10 @@
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#272727"
-  image: assets/logos/cartoon-image-boy-with-book-his-hand_1230151-6104.jpg
+  image: assets/logos/light-mode-dark-glyph-ui-icon-vector-43353308.jpg
   image_dark: assets/logos/cartoon-image-boy-with-book-his-hand_1230151-6104.jpg
-
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: assets/logos/cartoon-image-boy-with-book-his-hand_1230151-6104.jpg
+    image: assets/logos/light-mode-dark-glyph-ui-icon-vector-43353308.jpg
     image_dark: assets/logos/cartoon-image-boy-with-book-his-hand_1230151-6104.jpg

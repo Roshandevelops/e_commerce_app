@@ -6,6 +6,7 @@ import 'package:e_commerce_app/theme/custom_themes/k_elevated_button_theme.dart'
 import 'package:e_commerce_app/theme/custom_themes/k_outlined_button_theme.dart';
 import 'package:e_commerce_app/theme/custom_themes/k_text_form_field_theme.dart';
 import 'package:e_commerce_app/theme/custom_themes/k_text_theme.dart';
+import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:flutter/material.dart';
 
 class KAppTheme {
@@ -35,7 +36,7 @@ class KAppTheme {
       fontFamily: "poppins",
       brightness: Brightness.dark,
       primaryColor: Colors.yellow,
-      scaffoldBackgroundColor: Colors.black,
+      scaffoldBackgroundColor: KColors.kAppDarkColor,
       textTheme: KTextTheme.darkTextTheme,
       appBarTheme: KAppbarTheme.darkAppBarTheme,
       elevatedButtonTheme: KElevatedButtonTheme.darkElevatedButtonTheme,

@@ -2,7 +2,6 @@ import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:flutter/material.dart';
 
 class KAppbarTheme {
-  KAppbarTheme();
 
   ///light app bar theme
 
