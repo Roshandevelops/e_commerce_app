@@ -36,7 +36,7 @@ class KAppTheme {
       fontFamily: "poppins",
       brightness: Brightness.dark,
       primaryColor: Colors.yellow,
-      scaffoldBackgroundColor: KColors.kAppDarkColor,
+      scaffoldBackgroundColor: KColors.kblack,
       textTheme: KTextTheme.darkTextTheme,
       appBarTheme: KAppbarTheme.darkAppBarTheme,
       elevatedButtonTheme: KElevatedButtonTheme.darkElevatedButtonTheme,

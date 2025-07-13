@@ -38,13 +38,13 @@ class KSizes {
 
   /// Image Sizes
 
-  static const double kImageThumoSize = 80;
+  static const double kImageThumbSize = 80;
 
   /// Default Spacing between Sections
 
-  static const kDefaultSpace = 24;
-  static const kSpaceBtwItems = 16;
-  static const kSpaceBtwSec = 32;
+  static const double kDefaultSpace = 24;
+  static const double kSpaceBtwItems = 16;
+  static const double kSpaceBtwSec = 32;
 
   /// Border Radius
 
@@ -68,12 +68,24 @@ class KSizes {
   static const double kInputFieldRadius = 12;
   static const double kSpaceBtwFields = 16;
 
+  /// card Sizes
+
+  static const double kLgCardRadius = 16;
+  static const double kMdCardRadius = 12;
+  static const double kSmCardRadius = 10;
+  static const double kXsCardRadius = 6;
+  static const double kCardElevation = 2;
+
   /// Image carousel height
   static const double kImageCarouselHeight = 200;
 
   /// Loading Indicator Size
 
   static const double kLoadingIndicatorSize = 30;
+
+  /// Grid View Spacing
+
+  static const double gridviewSpacing = 16;
 
   /// sizedBox Height
   static const SizedBox kHeight10 = SizedBox(
