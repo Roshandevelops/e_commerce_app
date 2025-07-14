@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/theme/k_app_theme.dart';
+import 'package:e_commerce_app/view/on_boarding/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,9 +9,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.system,
+        theme: KAppTheme.lightTheme,
+        darkTheme: KAppTheme.darkTheme,
+        home:const OnBoardingScreen());
   }
 }
