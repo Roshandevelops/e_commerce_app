@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/controller/on_boarding_controller.dart';
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/device/k_device_utility.dart';
@@ -10,12 +11,14 @@ class OnBoardingSmoothPageIndicatorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final OnBoardingController controller = OnBoardingController.instance;
     final dark = KHelperFunctions.isDarkMode(context);
     return Positioned(
       left: KSizes.kDefaultSpace,
       bottom: KDeviceUtility.getBottomNavigatBarHeight(context) + 25,
       child: SmoothPageIndicator(
-        controller: PageController(),
+        controller: controller.pageController,
+        onDotClicked: controller.dotNavigationClick,
         count: 3,
         effect: ExpandingDotsEffect(
           activeDotColor: dark ? KColors.kwhite : KColors.kAppDarkColor,

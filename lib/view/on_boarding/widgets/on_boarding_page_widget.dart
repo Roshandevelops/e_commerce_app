@@ -1,6 +1,4 @@
-import 'package:e_commerce_app/utils/constants/k_image_strings.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
-import 'package:e_commerce_app/utils/device/k_device_utility.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPageWidget extends StatelessWidget {

@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:e_commerce_app/controller/on_boarding_controller.dart';
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/device/k_device_utility.dart';
@@ -10,15 +13,19 @@ class OnBoardingNextButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final OnBoardingController controller = OnBoardingController.instance;
     final dark = KHelperFunctions.isDarkMode(context);
     return Positioned(
       right: KSizes.kDefaultSpace,
       bottom: KDeviceUtility.getBottomNavigatBarHeight(context),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            shape: CircleBorder(),
+            shape:const CircleBorder(),
             backgroundColor: dark ? KColors.primaryColor : KColors.kblack),
-        onPressed: () {},
+        onPressed: () {
+          controller.nextPage();
+          log("Clicked Next Button");
+        },
         child: const Icon(
           Iconsax.arrow_right_3,
         ),
