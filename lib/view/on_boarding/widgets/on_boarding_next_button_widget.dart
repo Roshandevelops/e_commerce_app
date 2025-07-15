@@ -20,8 +20,11 @@ class OnBoardingNextButtonWidget extends StatelessWidget {
       bottom: KDeviceUtility.getBottomNavigatBarHeight(context),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            shape:const CircleBorder(),
-            backgroundColor: dark ? KColors.primaryColor : KColors.kblack),
+          side: const BorderSide(color: KColors.kblack),
+          shape: const CircleBorder(),
+          backgroundColor:
+              dark ? KColors.onBoardingNxtButtonBlue : KColors.kblack,
+        ),
         onPressed: () {
           controller.nextPage();
           log("Clicked Next Button");

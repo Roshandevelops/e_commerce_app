@@ -18,4 +18,8 @@ class KTextStrings {
 
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Roshan here";
+
+
+
+  
 }
