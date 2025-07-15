@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class KDividerSection extends StatelessWidget {
           ),
         ),
         Text(
-          "or sign in with",
+          KTextStrings.orSignInWithText,
           style: Theme.of(context).textTheme.labelLarge,
         ),
         Flexible(
