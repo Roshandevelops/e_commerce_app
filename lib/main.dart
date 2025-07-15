@@ -1,6 +1,5 @@
 import 'package:e_commerce_app/auth/login/login_screen.dart';
 import 'package:e_commerce_app/theme/k_app_theme.dart';
-import 'package:e_commerce_app/view/on_boarding/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
