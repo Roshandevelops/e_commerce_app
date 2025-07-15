@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_image_strings.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
+import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class KSocialButtonsWidget extends StatelessWidget {
@@ -8,13 +9,14 @@ class KSocialButtonsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = KHelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
           decoration: BoxDecoration(
             border: Border.all(
-              color: KColors.accentColor,
+              color: dark ? KColors.kwhite : KColors.kblack,
             ),
             borderRadius: BorderRadius.circular(100),
           ),
@@ -33,7 +35,7 @@ class KSocialButtonsWidget extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             border: Border.all(
-              color: KColors.accentColor,
+              color: dark ? KColors.kblack : KColors.kblack,
             ),
             borderRadius: BorderRadius.circular(100),
           ),

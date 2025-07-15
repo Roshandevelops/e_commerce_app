@@ -1,5 +1,6 @@
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
+import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -18,9 +19,9 @@ class KLoginFormWidget extends StatelessWidget {
         child: Column(
           children: [
             TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
-                labelText: "E-Mail",
+                labelText: KTextStrings.emailText,
                 border: OutlineInputBorder(),
               ),
             ),
@@ -28,10 +29,10 @@ class KLoginFormWidget extends StatelessWidget {
               height: KSizes.kSpaceBtwFields,
             ),
             TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 suffixIcon: Icon(Iconsax.eye_slash),
-                labelText: "Password",
+                labelText: KTextStrings.passwordText,
                 border: OutlineInputBorder(),
               ),
             ),
@@ -51,7 +52,7 @@ class KLoginFormWidget extends StatelessWidget {
                       onChanged: (value) {},
                     ),
                     Text(
-                      "Remember Me",
+                      KTextStrings.rememberMeText,
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ],
@@ -62,7 +63,7 @@ class KLoginFormWidget extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    "Forgot Password?",
+                    KTextStrings.forgotPasswordtext,
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ),
@@ -81,7 +82,7 @@ class KLoginFormWidget extends StatelessWidget {
                   color: dark ? KColors.kblack : KColors.kwhite,
                 )),
                 onPressed: () {},
-                child: const Text("Sign In"),
+                child: const Text(KTextStrings.signInText),
               ),
             ),
             const SizedBox(
@@ -97,7 +98,7 @@ class KLoginFormWidget extends StatelessWidget {
                       BorderSide(color: dark ? KColors.kwhite : KColors.kblack),
                 ),
                 onPressed: () {},
-                child: const Text("Create Account"),
+                child: const Text(KTextStrings.createAccountText),
               ),
             ),
           ],

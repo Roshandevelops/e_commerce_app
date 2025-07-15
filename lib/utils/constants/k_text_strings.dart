@@ -14,12 +14,20 @@ class KTextStrings {
   static const String onBoardingSubTitle3 =
       "From our Doorstep to Yours - Swift,secure, and Contactless Delivery!";
 
-  /// Home
+  /// Login Screen
 
+  static const String loginTitle1 = "Welcome back,";
+  static const String loginSubTitle1 =
+      "Discover Limitless Choices and Unmatched Covenience";
+  static const String emailText = "E-Mail";
+  static const String passwordText = "Password";
+  static const String rememberMeText = "Remember Me";
+  static const String forgotPasswordtext = "Forgot Password?";
+  static const String signInText = "Sign In";
+  static const String createAccountText = "Create Account";
+  static const String orSignInWithText = "or sign in with";
+
+  /// Home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Roshan here";
-
-
-
-  
 }

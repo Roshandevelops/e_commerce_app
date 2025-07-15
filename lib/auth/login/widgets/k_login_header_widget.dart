@@ -1,5 +1,6 @@
 import 'package:e_commerce_app/utils/constants/k_image_strings.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
+import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -20,14 +21,14 @@ class KLoginHeaderWidget extends StatelessWidget {
           height: KSizes.kSm,
         ),
         Text(
-          "Welcome back,",
+          KTextStrings.loginTitle1,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         const SizedBox(
           height: KSizes.kSm,
         ),
         Text(
-          "Discover Limitless Choices and Unmatched Covenience",
+          KTextStrings.loginSubTitle1,
           style: Theme.of(context).textTheme.bodySmall,
         ),
       ],
