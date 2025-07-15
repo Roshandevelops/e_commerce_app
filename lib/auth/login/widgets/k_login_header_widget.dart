@@ -16,14 +16,14 @@ class KLoginHeaderWidget extends StatelessWidget {
           height: 100,
           dark ? KImageStrings.demoLightLogo : KImageStrings.demoDarkLogo,
         ),
-    const    SizedBox(
+        const SizedBox(
           height: KSizes.kSm,
         ),
         Text(
           "Welcome back,",
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-   const     SizedBox(
+        const SizedBox(
           height: KSizes.kSm,
         ),
         Text(

@@ -3,6 +3,7 @@ import 'package:e_commerce_app/auth/login/widgets/k_login_form_widget.dart';
 import 'package:e_commerce_app/auth/login/widgets/k_login_header_widget.dart';
 import 'package:e_commerce_app/auth/login/widgets/k_social_buttons_widget.dart';
 import 'package:e_commerce_app/auth/login/widgets/k_spacing_style_widget.dart';
+import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -24,6 +25,10 @@ class LoginScreen extends StatelessWidget {
 
               /// Divider Section
               KDividerSection(),
+
+              SizedBox(
+                height: KSizes.kSpaceBtwSec,
+              ),
 
               /// Footer
               KSocialButtonsWidget(),

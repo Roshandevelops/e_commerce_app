@@ -1,4 +1,6 @@
+import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
+import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -7,6 +9,7 @@ class KLoginFormWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = KHelperFunctions.isDarkMode(context);
 
     /// Text Form Field
     return Form(
@@ -65,7 +68,7 @@ class KLoginFormWidget extends StatelessWidget {
                 ),
               ],
             ),
-       const     SizedBox(
+            const SizedBox(
               height: KSizes.kSpaceBtwSec,
             ),
 
@@ -73,11 +76,15 @@ class KLoginFormWidget extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    side: BorderSide(
+                  color: dark ? KColors.kblack : KColors.kwhite,
+                )),
                 onPressed: () {},
-                child:const Text("Sign In"),
+                child: const Text("Sign In"),
               ),
             ),
-       const     SizedBox(
+            const SizedBox(
               height: KSizes.kSpaceBtwItems,
             ),
 
@@ -85,8 +92,12 @@ class KLoginFormWidget extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  side:
+                      BorderSide(color: dark ? KColors.kwhite : KColors.kblack),
+                ),
                 onPressed: () {},
-                child:const Text("Create Account"),
+                child: const Text("Create Account"),
               ),
             ),
           ],
