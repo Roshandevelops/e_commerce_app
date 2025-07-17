@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/auth/sign_up/register_screen.dart';
+import 'package:e_commerce_app/auth/sign_up/sign_up_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
@@ -100,7 +100,7 @@ class KLoginFormWidget extends StatelessWidget {
                       BorderSide(color: dark ? KColors.kwhite : KColors.kblack),
                 ),
                 onPressed: () {
-                  Get.to(() => const RegisterScreen());
+                  Get.to(() => const SignUpScreen());
                 },
                 child: const Text(KTextStrings.createAccountText),
               ),
