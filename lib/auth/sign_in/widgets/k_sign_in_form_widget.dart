@@ -1,8 +1,10 @@
+import 'package:e_commerce_app/auth/sign_up/sign_up_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class KLoginFormWidget extends StatelessWidget {
@@ -97,7 +99,9 @@ class KLoginFormWidget extends StatelessWidget {
                   side:
                       BorderSide(color: dark ? KColors.kwhite : KColors.kblack),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const SignUpScreen());
+                },
                 child: const Text(KTextStrings.createAccountText),
               ),
             ),

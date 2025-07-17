@@ -22,8 +22,7 @@ class OnBoardingNextButtonWidget extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           side: const BorderSide(color: KColors.kblack),
           shape: const CircleBorder(),
-          backgroundColor:
-              dark ? KColors.onBoardingNxtButtonBlue : KColors.kblack,
+          backgroundColor: dark ? KColors.primaryColor : KColors.kblack,
         ),
         onPressed: () {
           controller.nextPage();

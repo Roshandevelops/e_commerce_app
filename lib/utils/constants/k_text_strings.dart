@@ -26,6 +26,8 @@ class KTextStrings {
   static const String signInText = "Sign In";
   static const String createAccountText = "Create Account";
   static const String orSignInWithText = "or sign in with";
+  static const String orSignUpWithText = "or sign up with";
+  static const String letsCreateYourAccount = "Lets create your account";
 
   /// Home
   static const String homeAppbarTitle = "Good day for shopping";
