@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/auth/sign_in/sign_in_screen.dart';
+import 'package:e_commerce_app/auth/sign_in/view/sign_in_screen.dart';
 import 'package:e_commerce_app/auth/verify_email/widgets/email_verify_column_widget.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:flutter/cupertino.dart';

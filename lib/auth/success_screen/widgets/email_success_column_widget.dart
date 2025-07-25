@@ -1,6 +1,7 @@
-import 'package:e_commerce_app/auth/sign_in/sign_in_screen.dart';
+import 'package:e_commerce_app/auth/sign_in/view/sign_in_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_image_strings.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
+import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/device/k_device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +26,7 @@ class EmailSuccessColumnWidget extends StatelessWidget {
 
         /// Title
         Text(
-          "Your account successfully created!",
+          KTextStrings.yourAccountCreatedSuccessTitle,
           style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
@@ -35,7 +36,7 @@ class EmailSuccessColumnWidget extends StatelessWidget {
 
         /// Sub Title
         Text(
-          "congratulations.your account created. Continue to shop your dream",
+          KTextStrings.yourAccountCreatedSuccessSubTitle,
           style: Theme.of(context).textTheme.labelMedium,
           textAlign: TextAlign.center,
         ),
@@ -50,7 +51,7 @@ class EmailSuccessColumnWidget extends StatelessWidget {
             onPressed: () {
               Get.to(const SignInScreen());
             },
-            child: const Text("Continue"),
+            child: const Text(KTextStrings.continueText),
           ),
         ),
       ],

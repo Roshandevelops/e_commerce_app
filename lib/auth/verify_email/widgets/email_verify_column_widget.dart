@@ -1,6 +1,7 @@
-import 'package:e_commerce_app/auth/success_screen/email_success_screen.dart';
+import 'package:e_commerce_app/auth/success_screen/view/email_success_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_image_strings.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
+import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/device/k_device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +26,7 @@ class EmailVerifyColumnWidget extends StatelessWidget {
 
         /// Title
         Text(
-          "Verify your email address!",
+          KTextStrings.verifyYourEmailAddress,
           style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
@@ -43,7 +44,7 @@ class EmailVerifyColumnWidget extends StatelessWidget {
           height: KSizes.kSpaceBtwItems,
         ),
         Text(
-          "congratulations.your account Awaits.verify your email to start shopping ",
+         KTextStrings.verifyEmailSubTitle,
           style: Theme.of(context).textTheme.labelMedium,
           textAlign: TextAlign.center,
         ),
@@ -58,7 +59,7 @@ class EmailVerifyColumnWidget extends StatelessWidget {
             onPressed: () {
               Get.to(const EmailSuccessScreen());
             },
-            child: const Text("Continue"),
+            child: const Text(KTextStrings.continueText),
           ),
         ),
         const SizedBox(
@@ -68,7 +69,7 @@ class EmailVerifyColumnWidget extends StatelessWidget {
           width: double.infinity,
           child: TextButton(
             onPressed: () {},
-            child: const Text("Resend Email"),
+            child: const Text(KTextStrings.resendEmail),
           ),
         ),
       ],

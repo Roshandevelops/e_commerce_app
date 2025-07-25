@@ -2,7 +2,7 @@ import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class KDividerSection extends StatelessWidget {
-  const KDividerSection({super.key,required this.dividerText});
+  const KDividerSection({super.key, required this.dividerText});
 
   final String dividerText;
 
@@ -21,12 +21,11 @@ class KDividerSection extends StatelessWidget {
           ),
         ),
         Text(
-       dividerText,
+          dividerText,
           style: Theme.of(context).textTheme.labelLarge,
         ),
         Flexible(
           child: Divider(
-            
             color: dark ? Colors.grey : Colors.grey,
             indent: 5,
             endIndent: 60,

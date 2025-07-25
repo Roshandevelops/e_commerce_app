@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/auth/verify_email/email_verify_screen.dart';
+import 'package:e_commerce_app/auth/verify_email/view/email_verify_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,16 +13,8 @@ class SignUpButtonWidget extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () {
           Get.to(
-            EmailVerifyScreen(),
+            const EmailVerifyScreen(),
           );
-         
-          // Navigator.of(context).push(
-          //   MaterialPageRoute(
-          //     builder: (context) {
-          //       return VerifyEmailScreen();
-          //     },
-          //   ),
-          // );
         },
         child: const Text(KTextStrings.createAccountText),
       ),

@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/auth/sign_up/sign_up_screen.dart';
+import 'package:e_commerce_app/auth/sign_up/view/sign_up_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
