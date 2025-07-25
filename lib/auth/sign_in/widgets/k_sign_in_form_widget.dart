@@ -21,7 +21,7 @@ class KLoginFormWidget extends StatelessWidget {
         child: Column(
           children: [
             TextFormField(
-              decoration: InputDecoration(
+              decoration:const InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
                 labelText: KTextStrings.emailText,
                 border: OutlineInputBorder(),
@@ -31,7 +31,7 @@ class KLoginFormWidget extends StatelessWidget {
               height: KSizes.kSpaceBtwFields,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration:const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 suffixIcon: Icon(Iconsax.eye_slash),
                 labelText: KTextStrings.passwordText,

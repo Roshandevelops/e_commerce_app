@@ -16,8 +16,8 @@ class KTextStrings {
 
   /// Login Screen
 
-  static const String loginTitle1 = "Welcome back,";
-  static const String loginSubTitle1 =
+  static const String signInTitle1 = "Welcome back,";
+  static const String signInSubTitle1 =
       "Discover Limitless Choices and Unmatched Covenience";
   static const String emailText = "E-Mail";
   static const String passwordText = "Password";

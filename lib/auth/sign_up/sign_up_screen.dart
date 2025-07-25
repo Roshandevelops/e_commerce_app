@@ -3,6 +3,7 @@ import 'package:e_commerce_app/auth/sign_up/widgets/sign_up_checkbox_widget.dart
 import 'package:e_commerce_app/auth/sign_up/widgets/sign_up_form_widget.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
+import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
 import 'package:e_commerce_app/widgets/k_divider_section.widget.dart';
 import 'package:e_commerce_app/widgets/k_social_buttons_widget.dart';
 import 'package:flutter/material.dart';
@@ -12,8 +13,14 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = KHelperFunctions.isDarkMode(context);
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+          // iconTheme: IconThemeData(
+          //   color: dark ? KColors.kwhite : KColors.kblack,
+          // ),
+          // automaticallyImplyLeading: true,
+          ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(KSizes.kDefaultSpace),

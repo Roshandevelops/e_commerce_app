@@ -7,15 +7,18 @@ import 'package:e_commerce_app/auth/sign_in/widgets/k_spacing_style_widget.dart'
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignInScreen extends StatelessWidget {
+  const SignInScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      // appBar: AppBar(
+
+      // ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: SpacingStyleWidget.paddingWithAppBarHeight,
+          padding: KSpacingStyleWidget.paddingWithAppBarHeight,
           child: Column(
             children: [
               /// App Logo and Title

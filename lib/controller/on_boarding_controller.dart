@@ -25,10 +25,9 @@ class OnBoardingController extends GetxController {
   /// update current index and jump to next page\
 
   void nextPage() async {
-     /// Login screen
+    /// Login screen
     if (currentPageIndex.value == 2) {
-     
-      Get.offAll(() => const LoginScreen());
+      Get.offAll(() => const SignInScreen());
       // Get.offAll(const LoginScreen());
     } else {
       /// Onboard screen
