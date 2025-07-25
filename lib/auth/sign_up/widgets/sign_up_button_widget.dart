@@ -15,6 +15,7 @@ class SignUpButtonWidget extends StatelessWidget {
           Get.to(
             EmailVerifyScreen(),
           );
+         
           // Navigator.of(context).push(
           //   MaterialPageRoute(
           //     builder: (context) {
