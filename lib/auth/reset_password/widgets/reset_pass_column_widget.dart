@@ -1,52 +1,47 @@
-import 'package:e_commerce_app/auth/success_screen/view/email_success_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_image_strings.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/device/k_device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-class EmailVerifyColumnWidget extends StatelessWidget {
-  const EmailVerifyColumnWidget({super.key});
+class ResetPasswordColumnWidget extends StatelessWidget {
+  const ResetPasswordColumnWidget({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         /// Image
-        Image(
-          image: const AssetImage(
-            KImageStrings.verifyEmailImage,
-          ),
+        Image.asset(
           width: KDeviceUtility.getScreenWidth(context) * 0.6,
+          KImageStrings.verifyEmailImage,
         ),
         const SizedBox(
           height: KSizes.kSpaceBtwSec,
         ),
 
-        /// Title
+        /// Title and Sub Title
         Text(
-          KTextStrings.verifyYourEmailAddress,
+          "Password Reset Email Sent",
           style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
         const SizedBox(
           height: KSizes.kSpaceBtwItems,
         ),
-
-        /// Sub Title
         Text(
           "roshanochu09@gmail.com",
           style: Theme.of(context).textTheme.labelLarge,
-          textAlign: TextAlign.center,
         ),
         const SizedBox(
-          height: KSizes.kSpaceBtwItems,
+          height: KSizes.kSpaceBtwSec,
         ),
         Text(
-          KTextStrings.verifyEmailSubTitle,
-          style: Theme.of(context).textTheme.labelMedium,
           textAlign: TextAlign.center,
+          "Your account security is our policy!.We've sent you a secure link to safely change your password and keep your account protected",
+          style: Theme.of(context).textTheme.labelMedium,
         ),
         const SizedBox(
           height: KSizes.kSpaceBtwSec,
@@ -56,12 +51,8 @@ class EmailVerifyColumnWidget extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () {
-              Get.to(const EmailSuccessScreen());
-            },
-            child: const Text(
-              KTextStrings.continueText,
-            ),
+            onPressed: () {},
+            child: const Text("Done"),
           ),
         ),
         const SizedBox(

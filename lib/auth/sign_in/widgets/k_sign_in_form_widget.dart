@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/auth/forgot_password/view/forgot_password_screen.dart';
 import 'package:e_commerce_app/auth/sign_up/view/sign_up_screen.dart';
 import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
@@ -21,7 +22,7 @@ class KLoginFormWidget extends StatelessWidget {
         child: Column(
           children: [
             TextFormField(
-              decoration:const InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
                 labelText: KTextStrings.emailText,
                 border: OutlineInputBorder(),
@@ -31,7 +32,7 @@ class KLoginFormWidget extends StatelessWidget {
               height: KSizes.kSpaceBtwFields,
             ),
             TextFormField(
-              decoration:const InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 suffixIcon: Icon(Iconsax.eye_slash),
                 labelText: KTextStrings.passwordText,
@@ -63,7 +64,9 @@ class KLoginFormWidget extends StatelessWidget {
                 /// Forgot Password
 
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(ForgotPasswordScreen());
+                  },
                   child: Text(
                     KTextStrings.forgotPasswordtext,
                     style: Theme.of(context).textTheme.bodySmall,

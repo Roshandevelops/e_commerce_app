@@ -18,7 +18,7 @@ class KLoginHeaderWidget extends StatelessWidget {
           dark ? KImageStrings.demoLightLogo : KImageStrings.demoDarkLogo,
         ),
         const SizedBox(
-          height: KSizes.kSm,
+          height: KSizes.kXl,
         ),
         Text(
           KTextStrings.signInTitle1,
