@@ -4,6 +4,7 @@ import 'package:e_commerce_app/utils/constants/k_colors.dart';
 import 'package:e_commerce_app/utils/constants/k_sizes.dart';
 import 'package:e_commerce_app/utils/constants/k_text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/k_helper_functions.dart';
+import 'package:e_commerce_app/widgets/bottom_navigation_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -86,7 +87,9 @@ class KLoginFormWidget extends StatelessWidget {
                     side: BorderSide(
                   color: dark ? KColors.kblack : KColors.kwhite,
                 )),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const BottomNavigationBarWidget());
+                },
                 child: const Text(KTextStrings.signInText),
               ),
             ),
