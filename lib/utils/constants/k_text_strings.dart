@@ -16,8 +16,8 @@ class KTextStrings {
 
   /// Login Screen
 
-  static const String loginTitle1 = "Welcome back,";
-  static const String loginSubTitle1 =
+  static const String signInTitle1 = "Welcome back,";
+  static const String signInSubTitle1 =
       "Discover Limitless Choices and Unmatched Covenience";
   static const String emailText = "E-Mail";
   static const String passwordText = "Password";
@@ -28,6 +28,16 @@ class KTextStrings {
   static const String orSignInWithText = "or sign in with";
   static const String orSignUpWithText = "or sign up with";
   static const String letsCreateYourAccount = "Lets create your account";
+  static const String verifyYourEmailAddress = "Verify your email address!";
+  static const String verifyEmailSubTitle =
+      "congratulations.your account Awaits.verify your email to start shopping ";
+  static const String continueText = "Continue";
+  static const String resendEmail = "Resend Email";
+  static const String yourAccountCreatedSuccessTitle =
+      "Your account successfully created!";
+  static const String yourAccountCreatedSuccessSubTitle=
+      "congratulations.your account created. Continue to shop your dream";
+
 
   /// Home
   static const String homeAppbarTitle = "Good day for shopping";

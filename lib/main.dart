@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: KAppTheme.lightTheme,
       darkTheme: KAppTheme.darkTheme,
-      home:const OnBoardingScreen(),
+      home: const OnBoardingScreen(),
     );
   }
 }

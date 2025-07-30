@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/auth/sign_in/sign_in_screen.dart';
+import 'package:e_commerce_app/auth/sign_in/view/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -25,10 +25,9 @@ class OnBoardingController extends GetxController {
   /// update current index and jump to next page\
 
   void nextPage() async {
-     /// Login screen
+    /// Login screen
     if (currentPageIndex.value == 2) {
-     
-      Get.offAll(() => const LoginScreen());
+      Get.offAll(() => const SignInScreen());
       // Get.offAll(const LoginScreen());
     } else {
       /// Onboard screen

@@ -35,7 +35,7 @@ class KSocialButtonsWidget extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             border: Border.all(
-              color: dark ? KColors.kblack : KColors.kblack,
+              color: dark ? KColors.kwhite : KColors.kblack,
             ),
             borderRadius: BorderRadius.circular(100),
           ),

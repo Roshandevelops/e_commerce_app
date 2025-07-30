@@ -74,6 +74,20 @@ flutter:
     - assets/images/on_boarding_images/on_board_image1.webp
     - assets/images/on_boarding_images/on_board_image2.png
     - assets/images/on_boarding_images/on_board_image3.png
+
+    
+      # Authentication Images
+    - assets/images/auth_images/verify_email_img.png
+    - assets/images/auth_images/email_success_img.jpg
+
+
+
+
+
+
+
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
